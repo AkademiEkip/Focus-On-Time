@@ -1,6 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
+
+// ana sayfa - giriş yaptıktan sonra karşımıza çıkacak sayfa.
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
