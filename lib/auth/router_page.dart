@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import '../screens/home_page.dart';
 import 'auth_page.dart';
 
-// yönlendirme sayfası - giriş yapıldı mı yapılmadı mı?
+// yönlendirme sayfası - giriş yapıldı mı yapılmadı mı??
 class RouterPage extends StatelessWidget {
   const RouterPage({Key? key}) : super(key: key);
 

@@ -3,7 +3,7 @@ import 'package:project_akademi/screens/login_page.dart';
 import '../screens/register_page.dart';
 
 
-// kontrol sayfası - Login page ve Register page dönüşümünü kontrol eden yapı.
+// kontrol sayfası - Login page ve Register page dönüşümünü kontrol eden yapı
 class AuthPage extends StatefulWidget {
   const AuthPage({ Key? key }) : super(key: key);
 
