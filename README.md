@@ -58,12 +58,13 @@ Zaman Bükücüler
 
 User Story'ler Trello Board'da bulunan kırmızı kartlarda yapılacak görevlerle birlikte belirtilmiştir. İlgili Kırmızı kartların detaylarında User Story'ler yazılmıştır.
 
-- **Daily Scrum**: Daily Scrum toplantıları WhatsApp uygulaması üzerinden yapılmış olup haftanın bir günü Google Meet üzerinden toplantı düzenlenmiştir. [Sprint 1 Daily Scrum Chats](https://github.com/OyunveUygulamaAkademisi/BootcampScrumTemplate/blob/main/ProjectManagement/Sprint1Documents/DailyScrumMeetingNotesSprint1.docx?raw=true)
+- **Daily Scrum**: Daily Scrum toplantıları WhatsApp uygulaması üzerinden yapılmış olup haftanın bir günü Google Meet üzerinden toplantı düzenlenmiştir. Project Management klasörü içerisinde bulunan Sprint 1 klasöründe Daily Scrum ekran görüntüleri sıralanmıştır.
 
 - **Sprint board update**: Sprint board screenshotları: 
-![Backlog 1](https://raw.githubusercontent.com/OyunveUygulamaAkademisi/BootcampScrumTemplate/main/ProjectManagement/Sprint1Documents/backlog1.png) 
-![Backlog 2](https://raw.githubusercontent.com/OyunveUygulamaAkademisi/BootcampScrumTemplate/main/ProjectManagement/Sprint1Documents/backlog2.png) 
-![Backlog 3](https://raw.githubusercontent.com/OyunveUygulamaAkademisi/BootcampScrumTemplate/main/ProjectManagement/Sprint1Documents/backlog3.png)
+![Backlog1](https://user-images.githubusercontent.com/94361819/167292087-29ce604c-8624-4f09-b88f-dc88eee10dc5.png)
+![Backlog2](https://user-images.githubusercontent.com/94361819/167292090-a10fd284-f4f9-4d2f-9cd7-519543d9fed1.png)
+![Backlog3](https://user-images.githubusercontent.com/94361819/167292084-effa3acb-19bc-43cb-b9e1-8d5884478ba1.png)
+
 
 - **Ürün Durumu**: Ekran görüntüleri:
   ![Screenshot 1](https://github.com/OyunveUygulamaAkademisi/BootcampScrumTemplate/blob/main/ProjectManagement/Sprint1Documents/productss1.png?raw=true)
