@@ -67,11 +67,12 @@ User Story'ler Trello Board'da bulunan kırmızı kartlarda yapılacak görevler
 
 
 - **Ürün Durumu**: Ekran görüntüleri:
-![product1](https://user-images.githubusercontent.com/94361819/167292267-5ffc56aa-96b0-4715-b525-3467fdc96cfd.jpeg)
-![product2](https://user-images.githubusercontent.com/94361819/167292268-03a742c1-33f5-49a3-ab6d-f59e9dc97256.jpeg)
-![product3](https://user-images.githubusercontent.com/94361819/167292269-5e079ba4-7ab7-4797-af6d-4a80192f9141.jpeg)
-![product4](https://user-images.githubusercontent.com/94361819/167292270-cf31fb21-bfb0-4dc4-be32-aa1891a2a930.jpeg)
-![product5](https://user-images.githubusercontent.com/94361819/167292271-f37949fe-a056-4a3c-bbe9-ec00e61c7738.png)
+![product1](https://user-images.githubusercontent.com/94361819/167312439-ebb6d96d-acc8-4c3f-9fc6-ee92b4c168fa.jpeg)
+![product2](https://user-images.githubusercontent.com/94361819/167312438-94a33782-44db-40a2-ae39-26faf1ab41ac.jpeg)
+![product3](https://user-images.githubusercontent.com/94361819/167292268-03a742c1-33f5-49a3-ab6d-f59e9dc97256.jpeg)
+![product4](https://user-images.githubusercontent.com/94361819/167292269-5e079ba4-7ab7-4797-af6d-4a80192f9141.jpeg)
+![product5](https://user-images.githubusercontent.com/94361819/167292270-cf31fb21-bfb0-4dc4-be32-aa1891a2a930.jpeg)
+![product6](https://user-images.githubusercontent.com/94361819/167292271-f37949fe-a056-4a3c-bbe9-ec00e61c7738.png)
 - **Sprint Review**: 
 Alınan kararlar: Ekip üyelerinin daha fazla sorumluluk almasına ve uygulamanın ana bileşenleri olan zaman yönetimi metotlarının bir sonraki sprint içerisinde bitirilmesine karar verildi. Ekipte tasarımcı eksiği olduğundan uygulama tasarımı ile ilgili  görevler bir sonraki Sprint içerisinde planlanacaktır. Ortaya çıkarılan ürünlerde bir problem ile karşılaşılmamıştır. 
 - **Sprint Retrospective:**
