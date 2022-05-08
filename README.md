@@ -67,9 +67,11 @@ User Story'ler Trello Board'da bulunan kırmızı kartlarda yapılacak görevler
 
 
 - **Ürün Durumu**: Ekran görüntüleri:
-  ![Screenshot 1](https://github.com/OyunveUygulamaAkademisi/BootcampScrumTemplate/blob/main/ProjectManagement/Sprint1Documents/productss1.png?raw=true)
-  ![Screenshot 2](https://github.com/OyunveUygulamaAkademisi/BootcampScrumTemplate/blob/main/ProjectManagement/Sprint1Documents/productss2.png?raw=true)
-
+ ![product1](https://user-images.githubusercontent.com/94361819/167292267-5ffc56aa-96b0-4715-b525-3467fdc96cfd.jpeg)
+![product2](https://user-images.githubusercontent.com/94361819/167292268-03a742c1-33f5-49a3-ab6d-f59e9dc97256.jpeg)
+![product3](https://user-images.githubusercontent.com/94361819/167292269-5e079ba4-7ab7-4797-af6d-4a80192f9141.jpeg)
+![product4](https://user-images.githubusercontent.com/94361819/167292270-cf31fb21-bfb0-4dc4-be32-aa1891a2a930.jpeg)
+![product5](https://user-images.githubusercontent.com/94361819/167292271-f37949fe-a056-4a3c-bbe9-ec00e61c7738.png)
 - **Sprint Review**: 
 Alınan kararlar: Veritabanı oluşturması email ile toplanacak veriler için gerekli görülmüştür. Fakat bir yandan da veritabanı form sayfası için gerekli olmamıştır. O sebeple PBI bir sonraki sprint'e aktarılmıştır. Çıkan ürünün çalışmasında ve testlerinde bir problem görülmemiştir. Ekstra koyulması gereken özellikler belirlenmiştir. Sprint Review katılımcıları: ......
 
