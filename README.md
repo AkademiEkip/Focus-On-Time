@@ -56,7 +56,7 @@ Zaman Bükücüler
 
 - **Backlog düzeni ve Story seçimleri**: Backlog'umuz uygulamamızın içerdiği özelliklere göre düzenlenmiştir. Story seçimleri hedef kitlemiz baz alınarak yapılmıştır.
 
-User Story'ler Trello Board'da bulunan kırmızı kartlarda yapılacak görevlerle birlikte belirtilmiştir. İlgili Kırmızı kartların detaylarında User Story'ler yazılmıştır.
+User Story'ler Trello Board'da bulunan kırmızı kartlarda yapılacak görevlerle birlikte belirtilmiştir. İlgili Kırmızı kartların detaylarında User Story'ler ve yapılan tahmini puanlamalar yazılmıştır.
 
 - **Daily Scrum**: Daily Scrum toplantıları WhatsApp uygulaması üzerinden yapılmış olup haftanın bir günü Google Meet üzerinden toplantı düzenlenmiştir. Project Management klasörü içerisinde bulunan Sprint 1 klasöründe Daily Scrum ekran görüntüleri sıralanmıştır.
 
