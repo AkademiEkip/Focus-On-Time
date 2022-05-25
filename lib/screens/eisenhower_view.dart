@@ -80,13 +80,14 @@ class _EisenhowerViewState extends State<EisenhowerView> {
                     itemCount: acilOnemli.length,
                     itemBuilder: (BuildContext context, int index) {
                       return ListTile(
+                        //style: ListTileStyle.list,
                         title: Text(acilOnemli[index].note.toString()),
                         onTap: (){
                           silinecekIndex = index;
                           deleteNoteDialog(context, acilOnemli, index);
                         },
                       );
-                        acilOnemli[index];
+                      acilOnemli[index];
                     },
                   ),
                   //ListView(
@@ -124,6 +125,11 @@ class _EisenhowerViewState extends State<EisenhowerView> {
                 ),
               ],
             ),
+          ),
+          const Divider(
+            thickness: 2,
+            height: 20,
+            color: Colors.black,
           ),
           const Padding(padding: EdgeInsets.all(10)),
           Row(
@@ -163,7 +169,7 @@ class _EisenhowerViewState extends State<EisenhowerView> {
                     itemCount: acilOnemliDegil.length,
                     itemBuilder: (BuildContext context, int index) {
                       return ListTile(
-                        title: Text(acilOnemli[index].note.toString()),
+                        title: Text(acilOnemliDegil[index].note.toString()),
                         onTap: (){
                           deleteNoteDialog(context, acilOnemliDegil, index);
                           //acilOnemli[index].function;
@@ -196,6 +202,7 @@ class _EisenhowerViewState extends State<EisenhowerView> {
   String? note = '';
 
   createAlertDialog(BuildContext context, List list) {
+    note = '';
     return showDialog(
       context: context,
       builder: (context) {
@@ -213,19 +220,24 @@ class _EisenhowerViewState extends State<EisenhowerView> {
             ),
             actions: [
               MaterialButton(
-                elevation: 5.0,
-                child: const Text('Kaydet'),
-                onPressed: () {
-                  setState(() {
-                    Note not = Note();
-                    not.note = note!;
-                    //not.function = createAlertDialog(context, list);
-                    list.add(
-                        not
-                    );
-                    Navigator.of(context).pop();
-                  });
-                }
+                  elevation: 5.0,
+                  child: const Text('Kaydet'),
+                  onPressed: () {
+                    if(note == ''){
+                      Navigator.of(context).pop();
+                    }else{
+                      setState(() {
+                        Note not = Note();
+                        not.note = note!;
+                        //not.function = createAlertDialog(context, list);
+                        list.add(
+                            not
+                        );
+                        Navigator.of(context).pop();
+                      });
+                    }
+
+                  }
               ),
 
             ],
@@ -268,147 +280,3 @@ class _EisenhowerViewState extends State<EisenhowerView> {
     );
   }
 }
-
-// enum SingingCharacter { bir, iki, uc, dort }
-//
-// class MyStatefulWidget extends StatefulWidget {
-//   const MyStatefulWidget({Key? key}) : super(key: key);
-//
-//   @override
-//   State<MyStatefulWidget> createState() => _MyStatefulWidgetState();
-// }
-//
-// class _MyStatefulWidgetState extends State<MyStatefulWidget> {
-//   SingingCharacter? _character = SingingCharacter.bir;
-//   String? note;
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     return SingleChildScrollView(
-//       child: AlertDialog(
-//         title: const Text('Notunuz: '),
-//         content: Column(
-//           children: [
-//             TextField(
-//               onChanged: (value) {
-//                 note = value;
-//               },
-//             ),
-//             ListTile(
-//               title: const Text('ACİL ÖNEMLİ'),
-//               leading: Radio<SingingCharacter>(
-//                 value: SingingCharacter.bir,
-//                 groupValue: _character,
-//                 onChanged: (SingingCharacter? value) {
-//                   setState(() {
-//                     _character = value;
-//                   });
-//                 },
-//               ),
-//             ),
-//             ListTile(
-//               title: const Text('ACİL ÖNEMLİ DEĞİL'),
-//               leading: Radio<SingingCharacter>(
-//                 value: SingingCharacter.iki,
-//                 groupValue: _character,
-//                 onChanged: (SingingCharacter? value) {
-//                   setState(() {
-//                     _character = value;
-//                   });
-//                 },
-//               ),
-//             ),
-//             ListTile(
-//               title: const Text('ÖNEMLİ ACİL DEĞİL'),
-//               leading: Radio<SingingCharacter>(
-//                 value: SingingCharacter.uc,
-//                 groupValue: _character,
-//                 onChanged: (SingingCharacter? value) {
-//                   setState(() {
-//                     _character = value;
-//                   });
-//                 },
-//               ),
-//             ),
-//             ListTile(
-//               title: const Text('ACİL VE ÖNEMLİ DEĞİL'),
-//               leading: Radio<SingingCharacter>(
-//                 value: SingingCharacter.dort,
-//                 groupValue: _character,
-//                 onChanged: (SingingCharacter? value) {
-//                   setState(() {
-//                     _character = value;
-//                   });
-//                 },
-//               ),
-//             ),
-//           ],
-//         ),
-//         actions: [
-//           MaterialButton(
-//             elevation: 5.0,
-//             child: const Text('Kaydet'),
-//             onPressed: () {
-//               setState(() {
-//                 if (_character == SingingCharacter.bir) {
-//                   setState(() {
-//                     acilOnemli.add(
-//                       ListTile(title: Text(note!), onTap: () {}),
-//                     );
-//                   });
-//                 } else if (_character == SingingCharacter.iki) {
-//                 } else if (_character == SingingCharacter.uc) {
-//                 } else {}
-//               });
-//               Navigator.of(context).pop();
-//             },
-//           ),
-//         ],
-//       ),
-//     );
-//   }
-// }
-
-// import 'package:emircan/constant.dart';
-// import 'package:flutter/material.dart';
-//
-// class EisenhowerView extends StatefulWidget {
-//   const EisenhowerView({Key? key}) : super(key: key);
-//   static String routeName = 'eisenhower';
-//
-//   @override
-//   State<EisenhowerView> createState() => _EisenhowerViewState();
-// }
-//
-// class _EisenhowerViewState extends State<EisenhowerView> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: const Text("Eisenhower Matrisi"),
-//       ),
-//       body: SafeArea(
-//         child: SingleChildScrollView(
-//           child: Container(
-//             margin: EdgeInsets.all(20),
-//             child: Table(
-//               //defaultColumnWidth: FixedColumnWidth(120.0),
-//               border: TableBorder.all(
-//                   color: Colors.black, style: BorderStyle.solid, width: 2),
-//               children: [
-//                 TableRow( children: [
-//                   Text('Website', style: TextStyle(fontSize: 20.0)),
-//                   Text('Tutoridsadadsadsadsadsadsaal', style: TextStyle(fontSize: 20.0)),
-//                 ]),
-//                 TableRow( children: [
-//                   Text('Website', style: TextStyle(fontSize: 20.0)),
-//                   Text('Tutorial', style: TextStyle(fontSize: 20.0)),
-//                 ]),
-//               ],
-//             ),
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-// }
