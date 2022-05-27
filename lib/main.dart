@@ -1,11 +1,9 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:project_akademi/auth/auth_page.dart';
-import 'package:project_akademi/screens/timer_page.dart';
 import 'admob.dart';
 import 'auth/router_page.dart';
 import 'firebase_options.dart';
-import 'screens/method_desc_page.dart';
+
 
 
 void main() async {
