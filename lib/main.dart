@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 import 'admob.dart';
 import 'auth/router_page.dart';
 import 'firebase_options.dart';
-
-
+import 'package:animated_splash_screen/animated_splash_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -26,4 +25,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
