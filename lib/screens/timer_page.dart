@@ -4,9 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:project_akademi/timer_buttonwidget.dart';
 
-
-
-
 class TimerPage extends StatefulWidget {
   TimerPage({Key? key}) : super(key: key);
 
@@ -14,24 +11,26 @@ class TimerPage extends StatefulWidget {
   State<TimerPage> createState() => _TimerPageState();
 }
 
+enum TimerState { practice, practiceBreak }
+
 class _TimerPageState extends State<TimerPage> {
-  int _seconds = _maxSeconds;
-  int _minutes = _maxMinutes;
-  static int _maxSeconds = 00;
-  static int _maxMinutes = 25;
+  late int _seconds;
+  late int _minutes;
   var f = NumberFormat("00");
+  var timerState = TimerState.practice;
 
   Timer? _timer;
   void resetTimer() => setState(() {
-        _seconds = _maxSeconds;
-        _minutes = _maxMinutes;
+        if (timerState == TimerState.practice) {
+          _seconds = 30;
+          _minutes = 00;
+        } else {
+          _seconds = 30;
+          _minutes = 0;
+        }
       });
 
   void startTimer() {
-    if (_timer != null) {
-      _timer!.cancel();
-    }
-
     if (_seconds > 60) {
       _minutes = (_seconds / 60).floor();
       _seconds -= (_minutes * 60);
@@ -44,9 +43,16 @@ class _TimerPageState extends State<TimerPage> {
           if (_minutes > 0) {
             _seconds = 59;
             _minutes--;
-          } else {
-            _timer?.cancel();
           }
+        }
+        if (_seconds == 0 && _minutes == 0) {
+          if (timerState == TimerState.practiceBreak) {
+            timerState = TimerState.practice;
+          } else {
+            timerState = TimerState.practiceBreak;
+          }
+          resetTimer();
+          _timer!.cancel();
         }
       });
     });
@@ -56,6 +62,12 @@ class _TimerPageState extends State<TimerPage> {
     setState(() {
       _timer?.cancel();
     });
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    resetTimer();
   }
 
   @override
@@ -91,19 +103,17 @@ class _TimerPageState extends State<TimerPage> {
 
   BoxDecoration methodPageBackground() {
     return const BoxDecoration(
-            gradient: LinearGradient(colors: [
-              Color.fromARGB(255, 4, 108, 212),
-              (Color.fromARGB(255, 208, 221, 235))
-            ], begin: FractionalOffset(0.5, 1)),
-          );
+      gradient: LinearGradient(colors: [
+        Color.fromARGB(255, 4, 108, 212),
+        (Color.fromARGB(255, 208, 221, 235))
+      ], begin: FractionalOffset(0.5, 1)),
+    );
   }
 
   _buildButtons() {
     final isRunning = _timer == null ? false : _timer!.isActive;
-    final isCompleted = _minutes == 0;
-    final startPoint = _minutes == _maxMinutes || _seconds == _maxSeconds;
 
-    return isRunning || !startPoint
+    return isRunning
         ? Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
@@ -128,7 +138,9 @@ class _TimerPageState extends State<TimerPage> {
             ],
           )
         : ButtonWidget(
-            text: isCompleted ? 'Molayı Başlat' : 'Çalışmayı Başlat',
+            text: timerState == TimerState.practiceBreak
+                ? 'Molayı Başlat'
+                : 'Çalışmayı Başlat',
             onClicked: () {
               startTimer();
             });
