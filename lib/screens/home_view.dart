@@ -4,6 +4,7 @@ import 'package:project_akademi/screens/profile_view.dart';
 
 import '../admob.dart';
 import '../constant.dart';
+import '../notedefteri.dart';
 import 'eisenhower_view.dart';
 import 'method_desc_page.dart';
 import 'timer_page.dart';
@@ -73,11 +74,18 @@ class _HomeViewState extends State<HomeView> {
               children: [
                 Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: buildWriteNote(context, () => (){}, "assets/images/1.png", "Notlar"),
+                  child: buildWriteNote(context, () => (){
+                    Admob.interstitialAd.show();
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Note()),
+                    );
+                  }, "assets/images/1.png", "Notlar"),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: buildWriteNote(context, () => (){
+                    Admob.interstitialAd.show();
                     Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => MetotTanitimi()),
@@ -87,6 +95,7 @@ class _HomeViewState extends State<HomeView> {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: buildWriteNote(context, () => (){
+                    Admob.interstitialAd.show();
                     Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => TimerPage()),
