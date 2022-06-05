@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:project_akademi/screens/firestore.dart';
 import 'admob.dart';
 import 'auth/router_page.dart';
 import 'firebase_options.dart';
@@ -11,6 +12,8 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+  Firestore firestore = Firestore();
+  await firestore.matrisFromDB();
   runApp(const MyApp());
 }
 
