@@ -12,8 +12,8 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  Firestore firestore = Firestore();
-  await firestore.matrisFromDB();
+//   Firestore firestore = Firestore();
+//   await firestore.matrisFromDB();
   runApp(const MyApp());
 }
 
