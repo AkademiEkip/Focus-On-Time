@@ -70,6 +70,7 @@ flutter:
     - asset/46-timer-stopwatch-outline.png
     - asset/Focus on time.png
     - asset/focus_on_time_2.png
+    - images/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
