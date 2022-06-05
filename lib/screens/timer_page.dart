@@ -22,11 +22,11 @@ class _TimerPageState extends State<TimerPage> {
   Timer? _timer;
   void resetTimer() => setState(() {
         if (timerState == TimerState.practice) {
-          _seconds = 30;
-          _minutes = 00;
+          _seconds = 00;
+          _minutes = 25;
         } else {
-          _seconds = 30;
-          _minutes = 0;
+          _seconds = 00;
+          _minutes = 5;
         }
       });
 
@@ -80,6 +80,9 @@ class _TimerPageState extends State<TimerPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title:Text("Pomodoro Sayacı")
+         ),
         body: Container(
             decoration: methodPageBackground(),
             child: Center(
