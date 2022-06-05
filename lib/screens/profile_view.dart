@@ -67,9 +67,9 @@ class ProfilePage extends StatelessWidget {
                     Container(
                       height: 55,
                       width: double.infinity,
-                      child: RaisedButton(
+                      child: ElevatedButton(
                         onPressed: () {},
-                        color: kBackgroundColor,
+                        style: ButtonStyle(),
                         child: const Center(
                           child: Text(
                             "Güncelle",
