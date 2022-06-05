@@ -227,7 +227,7 @@ class _EisenhowerViewState extends State<EisenhowerView> {
                       Navigator.of(context).pop();
                     }else{
                       setState(() {
-                        Note not = Note();
+                        Note not = Note('',0);
                         not.note = note!;
                         //not.function = createAlertDialog(context, list);
                         list.add(
