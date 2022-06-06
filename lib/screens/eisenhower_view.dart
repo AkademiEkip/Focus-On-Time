@@ -24,21 +24,6 @@ class _EisenhowerViewState extends State<EisenhowerView> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Eisenhower Matrisi'),
-        actions: [
-          IconButton(
-              onPressed: () {
-                //createAlertDialog(context, acilOnemli);
-                // setState(() {
-                //   showDialog(
-                //       context: context,
-                //       builder: (context) {
-                //         return MyStatefulWidget();
-                //       });
-                //   acilOnemli;
-                // });
-              },
-              icon: const Icon(Icons.add))
-        ],
       ),
       body: Column(
         children: [
