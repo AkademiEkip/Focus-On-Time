@@ -133,4 +133,54 @@ Alınan kararlar: Ekip üyelerinin daha fazla sorumluluk almasına karar verilmi
 
 # Sprint 3
 
+- **Sprint Notları**: User Story'ler product backlog'ların içine yazılmıştır. Product backlog item'lara tıklandığında hikayelerin detayları okunabilir.
+
+- **Sprint içinde tamamlanması tahmin edilen puan**: 39
+
+- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 106 puanlık backlog bulunmaktadır.3 sprint'e bölündüğünde üçüncü sprintte 39 puan tamamlanmasına karar verildi.
+
+- **Backlog düzeni ve Story seçimleri**: Backlog'umuz uygulamamızın içerdiği özelliklere göre düzenlenmiştir. Story seçimleri hedef kitlemiz baz alınarak yapılmıştır.
+
+User Story'ler Trello Board'da bulunan kırmızı kartlarda yapılacak görevlerle birlikte belirtilmiştir. İlgili Kırmızı kartların detaylarında User Story'ler ve yapılan tahmini puanlamalar yazılmıştır.
+
+- **Daily Scrum**: Daily Scrum toplantıları WhatsApp uygulaması üzerinden yapılmıştır. Project Management klasörü içerisinde bulunan Sprint 3 klasöründe Daily Scrum ekran görüntüleri sıralanmıştır.
+
+- **Sprint board update**: Sprint board screenshotları: 
+
+![Backlog3 1](https://user-images.githubusercontent.com/94361819/172151579-85f0f923-2843-4ba2-9187-8f2695b52f7e.png)
+![Backlog3 2](https://user-images.githubusercontent.com/94361819/172151588-ec6dc801-8e07-4f15-8505-475e86665152.png)
+![Backlog3 3](https://user-images.githubusercontent.com/94361819/172151597-2146e045-d3d7-4e25-8b78-838f1db84ca1.png)
+
+
+
+- **Ürün Durumu**: Ekran görüntüleri:
+- 
+<img width="360px" src="https://user-images.githubusercontent.com/94361819/172151694-e0cc08af-3496-4d20-8bf1-101f7e13197f.jpeg"/>  <img width="360px" src="https://user-images.githubusercontent.com/94361819/172151686-90fe48f8-40aa-4393-acf4-dca4f6aa4987.jpeg"></a>
+
+<img width="360px" src="https://user-images.githubusercontent.com/94361819/172151688-a6d7c47d-509a-49aa-b0e5-372422f1c945.jpeg"/>  <img width="360px" src="https://user-images.githubusercontent.com/94361819/172151689-7ca561c7-4756-44c6-8fa7-02f0b97f806c.jpeg"></a>
+ 
+ <img width="360px" src="https://user-images.githubusercontent.com/94361819/172151691-5655cd40-502a-4d66-a8cf-17ae525658df.jpeg"></a>
+
+
+- **Sprint Review**: 
+Alınan kararlar: 
+
+- Kanban metodu ve bildirim gönderme görevleri iptal edilmiştir. 
+- Firestorage işlemleri ile ilgili veri ekleme, güncelleme ve silme fonksiyonları yazılmış fakat projeye entegrasyonu sağlanamamıştır.
+- Bu sprint için 18 puanlık backlog tamamlanmıştır.
+
+
+Proje boyunca tamamlanması gereken 106 puanlık backlog'un 83 puanı tamamlanmıştır.
+
+
+
+- **Sprint Retrospective:**
+
+ - Takım içinde iletişim sıkıntıları yaşanmıştır. Bir süre sonra fikir alışverişi oldukça zorlaşmıştır.
+ - Takım üyeleri proje boyunca ekip olma bilinci oluşturmakta zorlanmıştır. 
+ - Takım üyeleri, bootcamp sürecine başlarken hayatlarındaki diğer yoğunlukları göz ardı ettiklerinden sorumluluklarını gerçekleştirmek konusunda sorunlar yaşamışlardır.
+ - Bir ekip çalışmasında bireyselliğin fazlasıyla ön planda olmasının yanlışlığı ve ekipçe hareket etmenin önemi üzerine görüşmeler yapılmıştır.
+
+
+
 ---
